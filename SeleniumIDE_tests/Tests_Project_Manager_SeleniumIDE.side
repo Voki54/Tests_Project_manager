@@ -1,0 +1,363 @@
+{
+  "id": "71d052e7-d9c3-4f8d-aa6c-17c7645dd915",
+  "version": "2.0",
+  "name": "Tests Project Manager ",
+  "url": "https://localhost:7188",
+  "tests": [{
+    "id": "69e58474-4355-4970-8cd2-ea36144c3122",
+    "name": "Join project",
+    "commands": [{
+      "id": "ed486c48-34a4-43b6-806e-1d9b09241aca",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59733c9d-7885-4319-a1c1-8d2bed41d164",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [[\"Manager123\", \":1K-#|%c/G\"], [\"Executor234\", \"[XSV9/o;_#\"], [\"Executor1234\", \"zQX[LIg_4O\"]];",
+      "targets": [],
+      "value": "users"
+    }, {
+      "id": "293909ce-dfd6-4803-b782-c2d5b34b3fcf",
+      "comment": "",
+      "command": "forEach",
+      "target": "users",
+      "targets": [],
+      "value": "u"
+    }, {
+      "id": "8c9fc7fd-f10c-4ef0-9d71-05db3e52ade2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Войти')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Account/Login')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48ea3cbb-98a2-4ba5-aafe-388290eafa6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Username",
+      "targets": [
+        ["id=Username", "id"],
+        ["name=Username", "name"],
+        ["css=#Username", "css:finder"],
+        ["xpath=//input[@id='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5ba2f4-7892-40ae-b7df-29795a9584f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=Username",
+      "targets": [
+        ["id=Username", "id"],
+        ["name=Username", "name"],
+        ["css=#Username", "css:finder"],
+        ["xpath=//input[@id='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${u[0]}"
+    }, {
+      "id": "3ea4d4c3-3374-4340-b6e4-cbe4c177c72f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "611e5240-1387-4fd1-9123-642bce652ba0",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${u[1]}"
+    }, {
+      "id": "f33d6f18-3c29-4cef-b5d5-d66750dd0c9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f9011e0-cbb3-41b4-96f1-d2343aaaffcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Присоединиться к проекту')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/JoinProject/Join')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72836320-af11-4be0-ae97-3ffb70f6dcd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=projectLink",
+      "targets": [
+        ["id=projectLink", "id"],
+        ["name=projectLink", "name"],
+        ["css=#projectLink", "css:finder"],
+        ["xpath=//input[@id='projectLink']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e13dc00-65f6-46bd-8c5e-2d8c46ea450f",
+      "comment": "",
+      "command": "type",
+      "target": "id=projectLink",
+      "targets": [
+        ["id=projectLink", "id"],
+        ["name=projectLink", "name"],
+        ["css=#projectLink", "css:finder"],
+        ["xpath=//input[@id='projectLink']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "https://localhost:7188/JoinProject/Join?projectId=5"
+    }, {
+      "id": "a7595135-69e2-4648-b7a3-68eb15a4b59e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Присоединиться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23b9af1-803e-4e78-9621-848e24a143b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=Manager123", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Manager123')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1aafb46-7029-49ad-b415-9b494fa5c873",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выйти",
+      "targets": [
+        ["linkText=Выйти", "linkText"],
+        ["css=.dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Выйти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Account/Logout')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выйти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c8e008-34af-4c00-9055-875cce83ee9f",
+      "comment": "",
+      "command": "echo",
+      "target": "Пользоваетль ${u[0]} отправил заявку",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc06098c-0e71-48e2-be0f-3e6aa16300ea",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3877e49-069a-4d8f-be6b-8cb1a39c6637",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "596a4c03-1818-404b-b999-606c2a28de0e",
+    "name": "Check notification",
+    "commands": [{
+      "id": "8d09cfdf-d376-4a4f-a5f1-b58b09607f83",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b27e5a0-1b99-438f-b281-011890a3fd98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Войти')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Account/Login')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "918c4a41-0ae9-4641-8485-0aef64498c57",
+      "comment": "",
+      "command": "click",
+      "target": "id=Username",
+      "targets": [
+        ["id=Username", "id"],
+        ["name=Username", "name"],
+        ["css=#Username", "css:finder"],
+        ["xpath=//input[@id='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "385b42f8-dc9a-4a52-98ee-d71f30cea1cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=Username",
+      "targets": [
+        ["id=Username", "id"],
+        ["name=Username", "name"],
+        ["css=#Username", "css:finder"],
+        ["xpath=//input[@id='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Admin123"
+    }, {
+      "id": "611c0573-d19c-4e69-b7cd-f7ecd79a5589",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9507364-a6f8-4b96-b624-36947ead61dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Уведомления",
+      "targets": [
+        ["linkText=Уведомления", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-linkin", "css:finder"],
+        ["xpath=//a[contains(text(),'Уведомления')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"localStorage.setItem('lastVisitedPage', window.location.href) \"]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Notifications')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Уведомления')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5f431f3-a608-4903-a86d-3a11227665eb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Manager123\", \"Executor234\", \"Executor1234\"];",
+      "targets": [],
+      "value": "userNames"
+    }, {
+      "id": "8e6c248d-c188-4407-8d68-db864dd89dcc",
+      "comment": "",
+      "command": "forEach",
+      "target": "userNames",
+      "targets": [],
+      "value": "n"
+    }, {
+      "id": "12a407a0-1cd5-48f9-bc05-497a39c9d095",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//td[contains(.,'${n} хочет присоединиться к проекту \"Project_1\"')]",
+      "targets": [],
+      "value": "Пользователь ${n} хочет присоединиться к проекту \"Project_1\"."
+    }, {
+      "id": "19491d99-0b01-4f08-917a-3b9ceef79569",
+      "comment": "",
+      "command": "echo",
+      "target": "Пользователь ${n} найден",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca6b2e3c-a1c6-436d-bc90-c23f7a6e5abb",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "991ff535-e71c-46b4-84ea-a7ea8826f043",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdown",
+      "targets": [
+        ["id=navbarDropdown", "id"],
+        ["linkText=Admin123", "linkText"],
+        ["css=#navbarDropdown", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin123')]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdown']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc89f29a-dccf-4d80-9fb1-993955fa8743",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Выйти",
+      "targets": [
+        ["linkText=Выйти", "linkText"],
+        ["css=.dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Выйти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Account/Logout')]", "xpath:href"],
+        ["xpath=//li/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Выйти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69ecf8af-0767-49d4-8bf7-c3eb7718888f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "33604eca-34b5-4b96-ade0-30b94ac8e79c",
+    "name": "Test join request notification",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["69e58474-4355-4970-8cd2-ea36144c3122", "596a4c03-1818-404b-b999-606c2a28de0e"]
+  }],
+  "urls": ["https://localhost:7188/"],
+  "plugins": []
+}
